@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh; /* iOS: excludes browser chrome */
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  /* Prevent iOS tap highlight flash on interactive elements */
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero-particles span.particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: #00d4c8;
+  animation: floatParticle 10s ease-in-out infinite;
+}
+
+@keyframes floatParticle {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-24px) scale(1.1);
+  }
+}
+
+.canvas-fade {
+  opacity: 0.88;
+}
+
+@keyframes heroLogo {
+  from {
+    opacity: 0;
+    transform: scale(0.88) translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+/* expo-out bezier: blazing fast start, silky landing */
+.hero-logo {
+  animation: heroLogo 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+button,
+a {
+  transition: all 0.25s ease;
+}
+
+@media (max-width: 768px) {
+  .step-line {
+    width: 100% !important;
+  }
+}
