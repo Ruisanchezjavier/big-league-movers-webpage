@@ -1,23 +1,25 @@
 {
   "name": "big-league-movers-webpage",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "lenis": "latest",
     "gsap": "^3.12.5",
+    "lenis": "latest",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "vite": "^5.4.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.4"
-  },
-  "devDependencies": {}
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.4.1"
+  }
 }
