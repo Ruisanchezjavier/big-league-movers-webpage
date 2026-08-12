@@ -276,7 +276,7 @@ function App() {
       {/* Preloader */}
       {!ready && (
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#070707]">
-          <p className="mb-4 font-display text-3xl tracking-widest text-accent">BIG LEAGUE MOVERS</p>
+          <p className="mb-4 font-display text-3xl tracking-widest text-accent">SWIFT HUAL MOVERS</p>
           <p className="text-sm text-accent/70">Loading experience… {loadProgress}%</p>
           <div className="mt-6 w-64 overflow-hidden rounded-full bg-white/10">
             <div
@@ -296,7 +296,7 @@ function App() {
           className="font-display uppercase text-white pointer-events-none select-none"
           style={{ position: 'fixed', zIndex: 15, lineHeight: 0.85 }}
         >
-          BIG LEAGUE<br />MOVERS
+          SWIFT HUAL<br />MOVERS
         </h1>
       )}
 
@@ -314,7 +314,7 @@ function App() {
             aria-hidden="true"
             className="font-display text-[clamp(6rem,7vw,8.5rem)] uppercase leading-[0.85] invisible"
           >
-            BIG LEAGUE<br />MOVERS
+            SWIFT HUAL<br />MOVERS
           </h1>
           <p className="mx-auto mt-20 sm:mt-14 max-w-xs sm:max-w-sm text-lg sm:text-xl text-white/55">
             Residential & Commercial Moving across Miami-Dade & Broward
@@ -442,7 +442,7 @@ function App() {
             </a>
           </div>
           <p className="mt-8 sm:mt-14 text-[10px] sm:text-xs uppercase tracking-[0.35em] sm:tracking-[0.4em] text-white/25">
-            © 2025 Big League Movers LLC. All rights reserved.
+            © 2025 SWIFT HUAL Movers LLC. All rights reserved.
           </p>
         </div>
       </section>
